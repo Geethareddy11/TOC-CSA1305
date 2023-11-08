@@ -1,0 +1,49 @@
+#include<stdio.h>
+#include<string.h>
+int main(){
+char s[100];
+int i,flag;
+int l;
+printf("enter a string to check:");
+scanf("%s",s);
+l=strlen(s);
+flag=1;
+for(i=0;i<l;i++)
+{
+if(s[i]!='0' && s[i]!='1')
+{
+ flag=0;
+}
+}
+if(flag!=1)
+printf("string is Not Valid\n");
+if(flag==1)
+{
+if (s[0]=='0'&&s[l-1]=='1')
+printf("string is accepted\n");
+else
+printf("string is Not accepted\n");
+}
+}
+2 comments on commit 8f94ac0
+@Rekha573
+Owner
+Author
+Rekha573 commented on 8f94ac0 last week
+image
+
+@Rekha573
+Owner
+Author
+Rekha573 commented on 8f94ac0 last week
+image
+
+@Geethareddy11
+Comment
+Leave a comment
+ You’re not receiving notifications from this thread.
+Footer
+© 2023 GitHub, Inc.
+Footer navigation
+Terms
+Privacy
